@@ -5,5 +5,8 @@
  * @returns {number}
  */
 function sum (m, n) {
-
+  if ([m, n].every(Number) !== true) 
+    throw new TypeError();
+  
+  return m + n;
 }
